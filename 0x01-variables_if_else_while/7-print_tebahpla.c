@@ -1,7 +1,5 @@
 #include <stdio.h>
-
 /**
- *
  * main - Entry - point
  *
  * Return: Always 0 (success)
@@ -9,10 +7,14 @@
 
 int main(void)
 {
-	int a;
+	char c;
 
-	for (a = 0; a < 10; a++)
-		printf("%d", a);
+	c = 'z';
+	while
+		(c >= 'a') {
+			putchar(c);
+			c--;
+		}
 	putchar('\n');
 	return (0);
 }
