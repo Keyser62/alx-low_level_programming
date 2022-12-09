@@ -3,26 +3,31 @@
 #include <stdlib.h>
 
 /**
- * main - Entry point
+ * main - main function to generate a random number
  *
  * Return: Always 0 (Success)
+ *
  */
-
 int main(void)
 {
 	int n;
-
-	int m;
+	int num;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-
-	m = n % 10;
-	if (m > 5)
-		printf("Last digit of %d is %d and is geater than 5\n", n, m);
-	if (m == 0)
-		printf("Last digit of %d is %d and is 0\n", n, m);
-	if (m < 6 && m != 0)
-		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, m);
+	printf("Last digit of %d is ", n);
+	num = n % 10;
+	if (num > 5)
+	{
+		printf("%d and is greater than 5\n", num);
+	}
+	else if ((num < 0) && (num < 0))
+	{
+		printf("%d and is less than 6 and not 0\n", num);
+	}
+	else
+	{
+		printf("%d and is 0\n", num);
+	}
 	return (0);
 }
